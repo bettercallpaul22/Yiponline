@@ -159,7 +159,7 @@ const ProductFormScreen = ({ navigation }: any) => {
         )}
 
         <TouchableOpacity style={styles.pickButton} onPress={handlePickImage}>
-          <Text style={styles.pickText}>Pick Image</Text>
+          <Text style={styles.pickText}>Pick Image from Gallery</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleAddProduct}>
@@ -189,13 +189,11 @@ const ProductFormScreen = ({ navigation }: any) => {
                 href="./Products"
                 style={[styles.modalButton, styles.viewButton]}
                 onPress={() => setModalVisible(false)}
-                
               >
                 <Text style={[styles.modalButtonText, { textAlign: "center" }]}>
                   View Product
                 </Text>
               </Link>
-            
             </View>
           </View>
         </View>
